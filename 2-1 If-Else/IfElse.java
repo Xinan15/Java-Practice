@@ -16,5 +16,6 @@ public class IfElse {
         
         System.out.println(max);
         
+        // In Java, an 'else' statement is always associated with the closest preceding 'if' statement 
     }
 }
