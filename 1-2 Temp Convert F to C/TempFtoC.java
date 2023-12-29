@@ -14,7 +14,7 @@ public class TempFtoC {
 
         int c = (int)((f - 32) * 5/9);
         // Formula: (32°F − 32) × 5/9 = 0°C
-        // (int)x: convert x into an int
+        // (int)x: Type casting: convert x into an int
         
         System.out.println(f+" degrees Fahrenheit equals "+c+" degrees Celsius");
     }
