@@ -38,6 +38,11 @@ public class QuizNumbers{
                 oddCount++;
             }
             System.out.println(oddCount + " " + evenCount);
+
+            in.close();
+            // If you're sure you won't need to read from System.in again, it's safe and good practice to close your Scanner.
+
         }
+
     }
 }
