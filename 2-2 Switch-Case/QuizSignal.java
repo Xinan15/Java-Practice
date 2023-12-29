@@ -32,7 +32,7 @@
 
 import java.util.Scanner;
 
-public class Signal {
+public class QuizSignal {
 
     public static void main(String[] args) {
 

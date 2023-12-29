@@ -21,7 +21,7 @@
 
 import java.util.Scanner;
 
-public class Time {
+public class QuizTime {
     public static void main(String[] args) {
 
         System.out.println("Please enter BJT:");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TempFtoC {
+public class QuizTempFtoC {
     
     public static void main(String[] args) {
 

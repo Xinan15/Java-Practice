@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Float {
+public class QuizHeight {
     public static void main(String[] args) {
         System.out.println("Please enter your height in feet and inches separatly,");
         System.out.println("For example, '5 7' means '5 feet 7 inches':");
