@@ -106,3 +106,6 @@ public class Signal {
         System.out.println(strength+", "+readability);
     }
 }
+
+// With break: Exits the switch block after executing the matched case.
+// Without break: Causes "fall-through", where subsequent case statements are executed until a break is encountered or the switch block ends.
