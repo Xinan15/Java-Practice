@@ -27,6 +27,14 @@ public class QuizNumbers{
         while(true){
             System.out.println("Please enter a positive integer data:");
             Scanner in = new Scanner(System.in);
+
+            // Scanner: to create an instance of the Scanner class, This instance is typically used to read input from various sources, 
+            // in: The variable name for the Scanner instance.
+            // new Scanner(System.in): This is the construction of a new Scanner object.
+            // new: to create a new instance of a class.
+            // System.in: refers to the standard input stream, which is usually linked to the keyboard input in most environments. 
+            // This means that the Scanner is set up to read input from the keyboard.
+             
             int number = in.nextInt();
 
             if(number == -1){
