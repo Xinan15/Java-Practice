@@ -4,13 +4,14 @@ public class Factorial {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int number = in.nextInt();
+        in.close();
         int i;
         int factor = 1;
 
         for(i=1;i<=number;i++){
             factor = factor * i;
         }
-        in.close();
+        
         System.out.println(factor);
         
     }
