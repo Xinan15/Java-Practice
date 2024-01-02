@@ -1,3 +1,9 @@
+Week 1 Classes and Objects
+What is a class? What is an object?
+What is the difference in scope and life cycle between local variables and object member variables?
+
+
+
 ## 1. What is a class? What is an object?
 ### Class
 In Java, a class is a blueprint for creating objects.<br>

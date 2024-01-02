@@ -20,7 +20,7 @@ It returns true if the values are equal and false otherwise. <br>
 For example, if (a == 5) checks whether the value of a is equal to 5.
 
 ## 3. How to investigate compilation errors:
-Compilation errors occur when the code violates the syntax rules of the language.
+Compilation errors occur when the code violates the `syntax` rules of the language.
 1. Carefully read the error messages provided by the compiler, which usually indicate the location (line number) and nature of the error.
 2. Check for common mistakes like missing semicolons, mismatched brackets, typos in variable names or keywords, and incorrect use of operators.
 3. Use an Integrated Development Environment (IDE) with syntax highlighting and code analysis features to easily spot and correct errors.
@@ -29,19 +29,19 @@ Compilation errors occur when the code violates the syntax rules of the language
 ### Integer Types
 These represent whole numbers, both positive and negative. <br>
 They do not contain any fractional or decimal components. <br>
-Examples include <strong>int</strong>, <strong>long</strong>. They are both primitive data types used for storing integer numbers, but they differ in their size and the range of values they can hold.
+Examples include `int`, `long`. They are both primitive data types used for storing integer numbers, but they differ in their size and the range of values they can hold.
 ### Floating-Point Types
-These represent numbers with fractional parts (decimals). They are used when more precision is required, like in scientific calculations. Examples include <strong>float</strong> and <strong>double</strong> in Java.<br>
+These represent numbers with fractional parts (decimals). They are used when more precision is required, like in scientific calculations. Examples include `float` and `double` in Java.<br>
 The main difference lies in their ability to represent numbers with precision and range.
 ## 5. Converting int to double and double to int in Java:
 ### Int to Double
-```
+```java
 int n = 5;
 double n = (double) n;
 // n would be 5.0.
 ```
 ### Double to Int
-```
+```java
 double n = 9.99;
 int n = (int) n;
 // n would be 9
