@@ -11,6 +11,8 @@ public class Count {
         // Handle negative numbers by taking the absolute value
         int absNumber = Math.abs(number);
 
+        in.close();
+
         do{
             absNumber = absNumber/10;
             count = count+1;

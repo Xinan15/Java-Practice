@@ -17,5 +17,6 @@ public class QuizTempFtoC {
         // (int)x: Type casting: convert x into an int
         
         System.out.println(f+" degrees Fahrenheit equals "+c+" degrees Celsius");
+        in.close();
     }
 }

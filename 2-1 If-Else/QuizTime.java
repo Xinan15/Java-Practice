@@ -37,6 +37,8 @@ public class QuizTime {
         }
 
         System.out.println(utc);
+
+        in.close();
     
     }
 

@@ -12,6 +12,8 @@ public class Loop {
             int amout = in.nextInt();
             balance += amout;
 
+            in.close();
+
             if (balance >= 10) {
                 // print a ticket
 

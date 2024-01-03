@@ -5,6 +5,8 @@ public class Switch {
 
         Scanner in = new Scanner(System.in);
         int type = in.nextInt();
+
+        in.close();
         switch (type){
 
             case 1:

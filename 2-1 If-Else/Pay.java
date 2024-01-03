@@ -23,6 +23,8 @@ public class Pay {
         
         System.out.println("Gross Earnings: "+pay);
 
+        in.close();
+
     }
 
 }

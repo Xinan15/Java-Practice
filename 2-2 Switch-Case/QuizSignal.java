@@ -44,6 +44,8 @@ public class QuizSignal {
         // This line waits for the user to input a line of integer and then reads it into the int 'signal'.
 
         // Extracting the ones and tens digits
+
+        in.close();
         int S = signal % 10;
         int R = (signal / 10) % 10;
 
