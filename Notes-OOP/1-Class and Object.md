@@ -1,69 +1,59 @@
+# OOP
+## What's OOP?
+OOP stands for Object-Oriented Programming.
 
-Week 1 Classes and Objects
-What is a class? What is an object?
-What is the difference in scope and life cycle between local variables and object member variables?
+Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
 
+Object-oriented programming has several advantages over procedural programming:
 
+- OOP is faster and easier to execute
+- OOP provides a clear structure for the programs
+- OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+- OOP makes it possible to create full reusable applications with less code and shorter development time
+- Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.
 
-## 1. What is a class? What is an object?
-### Class
-In Java, a class is a blueprint for creating objects.<br>
-It defines a datatype by bundling data and methods that operate on the data into a single unit.<br>
-A class can contain fields (variables), methods (functions), constructors, blocks, nested class, and interface.<br>
-For example, a <strong>Car</strong> class in Java might have fields like <strong>colour</strong> and <strong>brand</strong>, and methods like <strong>drive()</strong> and <strong>brake()</strong>.
-### Object
-An object is an instance of a class.<br>
-When a class is defined, no memory is allocated until an object of that class is created using the new keyword.<br>
- The object has its own state (attributes or properties) and behaviour (methods).
- <br>
- For instance, if you create an instance of the Car class (Car myCar = new Car();), myCar is an object with its own state (attributes like color, brand) and behaviors (methods).
+## Classes and Objects
+  ### Class
+   <strong>A class is a template for objects.</strong>
 
-## 2. What is the difference in scope and life cycle between local variables and object member variables?
-Now, regarding the difference in scope and life cycle between local variables and object member variables:
+  **Definition**
+  <br>A blueprint for objects. Defines a datatype by bundling data and methods.
 
-Local Variables:
+  **Contents**
+  Can include fields (variables), methods (functions), constructors, blocks, nested classes, and interfaces.
+  
+  **Example**: <br>
+  A `Car` class might have fields like `colour`, `brand`, and methods like `drive()` and `brake()`.
 
-Scope: Local variables are declared within a method or block and can only be accessed within that method or block.
-Life Cycle: The life cycle of a local variable is limited to the execution of the method or block. When the method completes or the block is exited, the local variable is destroyed.
-Object Member Variables (Instance Variables):
+  ![Alt text](image.png)
 
-Scope: Member variables are declared within a class but outside any method. They are accessible from any method within the class (and from outside the class based on their access modifiers).
-Life Cycle: The life cycle of member variables is tied to the life cycle of the object. As long as the object exists, these variables exist and retain their values. When the object is destroyed (or becomes eligible for garbage collection), these variables are also destroyed.
-In summary, local variables are temporary and limited to the scope of a method, while member variables are associated with an object's state and exist as long as the object exists.
+  ![Alt text](image-1.png)
 
+  ### Object
+  <strong>An object is an instance of a class.</strong><br>
 
-Certainly! Here's an expanded and detailed format for your notes on Classes, Objects, and variable scopes in Java:
+  When the individual objects are created, they `inherit` all the variables and methods from the class.
 
----
+  **Definition**: An instance of a class, created using the `new` keyword.
 
- Understanding Classes and Objects in Java**
+  **Characteristics**: Possesses its own state (attributes) and behaviour (methods).
+  
+  **Example**: Creating a `Car` object (`Car myCar = new Car();`) means `myCar` has attributes (like color, brand) and behaviours (methods).
 
-**1. Classes and Objects**
-   - **Class**
-     - **Definition**: A blueprint for objects. Defines a datatype by bundling data and methods.
-     - **Contents**: Can include fields (variables), methods (functions), constructors, blocks, nested classes, and interfaces.
-     - **Example**: A `Car` class might have fields like `colour`, `brand`, and methods like `drive()` and `brake()`.
+## What is the difference in scope and life cycle between local variables and object member variables?
 
-   - **Object**
-     - **Definition**: An instance of a class, created using the `new` keyword.
-     - **Characteristics**: Possesses its own state (attributes) and behaviour (methods).
-     - **Example**: Creating a `Car` object (`Car myCar = new Car();`) means `myCar` has attributes (like color, brand) and behaviours (methods).
+### Scope
+1. **Local Variables**
+- Defined within methods or blocks.
+- Accessible only within the defining method or block.
+2. **Member Variables**
+- Defined inside a class but outside any methods.
+- Accessible from any method within the class, and potentially from outside the class depending on access modifiers.
 
-**2. Scope and Life Cycle of Variables**
-   - **Local Variables**
-     - **Scope**: Declared and accessible only within a method or block.
-     - **Life Cycle**: Exist only during the execution of the method/block. They are destroyed once the method completes or block is exited.
-     - **Example**: A variable declared inside a method `public void drive() { int speed = 0; ... }` is a local variable.
-
-   - **Object Member Variables (Instance Variables)**
-     - **Scope**: Declared within a class but outside any method. Accessible from any method within the class (subject to access modifiers).
-     - **Life Cycle**: Tied to the object's existence. They persist as long as the object exists and are destroyed when the object is garbage collected.
-     - **Example**: In a `Car` class, `private String colour;` is an instance variable.
-
-**Key Insights**
-   - Local variables are temporary and confined to the method's scope.
-   - Member variables (Instance Variables) are linked to the object's lifecycle and define its state.
-
----
-
-This format provides a comprehensive overview, detailing the concepts of classes and objects in Java, along with the differences in scope and life cycle between local and member variables.
+### Life Cycle
+1. **Local Variables**
+- Exist only during the execution of the method or block they are defined in.
+- Destroyed once the method completes or the block is exited.
+2. **Member Variables**
+- Their life cycle is tied to the life of the object instance.
+- They are destroyed when the object is destroyed or becomes eligible for garbage collection.
