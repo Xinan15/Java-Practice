@@ -9,7 +9,6 @@ public class Person {
         
         System.out.println(myObj.name); // error 
     
-
     // So, we need provide public get and set methods to access and update the value of a private variable
     // Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
 

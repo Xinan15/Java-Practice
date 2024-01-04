@@ -32,6 +32,20 @@ Its source code is first compiled into a binary intermediate form called bytecod
 
 This byte-code runs on the Java Virtual Machine (JVM), which interprets this bytecode and executes it.
 
+Certainly, here's a more concise explanation:
+
+### .java Files
+- These are Java source code files.
+- Contain human-readable code written by programmers.
+- Input for the Java compiler (`javac`).
+- `.java` files are where you write your program,
+
+### .class Files**:
+- Result from compiling `.java` files.
+- Contain Java bytecode, not human-readable.
+- Executed by the Java Virtual Machine (JVM).
+- `.class` files are what the computer uses to run the program.
+
 ## '=' and '=='
 
 ### '=' Assignment Operator
