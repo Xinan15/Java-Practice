@@ -13,6 +13,14 @@ Object-oriented programming has several advantages over procedural programming:
 - Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.
 
 ## Classes and Objects
+
+Java is an object-oriented programming language.<br>
+
+Everything in Java is associated with classes and objects, along with its attributes and methods.<br>
+
+For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
   ### Class
    <strong>A class is a template for objects.</strong>
 
@@ -40,20 +48,14 @@ Object-oriented programming has several advantages over procedural programming:
   
   **Example**: Creating a `Car` object (`Car myCar = new Car();`) means `myCar` has attributes (like color, brand) and behaviours (methods).
 
-## What is the difference in scope and life cycle between local variables and object member variables?
-
-### Scope
-1. **Local Variables**
-- Defined within methods or blocks.
+## Local Variables vs Instance Variables
+### Local Variables
+- `Defined within methods or blocks.`
 - Accessible only within the defining method or block.
-2. **Member Variables**
-- Defined inside a class but outside any methods.
-- Accessible from any method within the class, and potentially from outside the class depending on access modifiers.
-
-### Life Cycle
-1. **Local Variables**
 - Exist only during the execution of the method or block they are defined in.
 - Destroyed once the method completes or the block is exited.
-2. **Member Variables**
+### Instance Variables / Object Member Variables
+- `Defined inside a class but outside any methods.`
+- Accessible from any method within the class, and potentially from outside the class depending on access modifiers.
 - Their life cycle is tied to the life of the object instance.
 - They are destroyed when the object is destroyed or becomes eligible for garbage collection.
