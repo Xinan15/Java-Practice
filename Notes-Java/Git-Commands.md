@@ -1,16 +1,21 @@
 ### Git Commands:<br>
-* Initialise Git in local folder:<br>
-```git init```
-<br>
-* Link Your Local Repository to GitHub:<br>
-```git remote add origin https://github.com/username/repositoryname.git```
-<br>
-*Stage Your Changes:<br>
-```git add .```
-<br>
-*Commit Your Changes:<br>
-```commit -m "Initial commit".```
-<br>
-*Push to GitHub:<br>
-```git push -u origin master```<br>
-(or main if your default branch is named 'main').
+
+### create a new repository on the command line
+
+```
+echo "# Java-Intermediate" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/username/repositoryname.git
+git push -u origin main
+```
+
+
+### push an existing repository from the command line
+```
+git remote add origin https://github.com/username/repositoryname.git
+git branch -M main
+git push -u origin main
+```

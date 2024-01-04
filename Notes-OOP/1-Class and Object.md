@@ -38,7 +38,7 @@ A Class is like an object constructor, or a "blueprint" for creating objects.
   ![Alt text](image-1.png)
 
   ### Object
-  <strong>An object is an instance of a class.</strong><br>
+  <strong>An object is an `instance` of a class.</strong><br>
 
   When the individual objects are created, they `inherit` all the variables and methods from the class.
 
