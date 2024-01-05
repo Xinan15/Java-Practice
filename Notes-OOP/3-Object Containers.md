@@ -25,7 +25,15 @@ ArrayList<String> cars = new ArrayList<String>();
 ### ArrayList Storage
 An `ArrayList` in Java is stored continuously in memory.<br>
 
-It's backed by a dynamic array, meaning all elements are in a contiguous memory location.
+It's backed by a dynamic array, meaning all elements are in a contiguous memory location.<br>
+
+In an object array in Java, each element stores a reference to an object. These references point to the actual objects located in the heap memory. When you create an object array, regardless of the object type, the array itself doesn't directly store the objects. Instead, it stores the memory addresses (references) where these objects can be found.
+
+For instance, if you have an array of `String` objects, each element in the array holds a reference to a `String` object. If you modify the object through any of these references, the change is reflected across all references to that object, since they all point to the same memory location.
+
+It's important to note that when an object array is first created, before any objects are assigned to its elements, each element in the array will hold the default value `null`. This `null` value indicates that the array element does not currently reference any object.
+
+
 
 ### Time Complexity of ArrayList Operations
 - **Access**: `O(1)` - Direct index access.
