@@ -1,17 +1,18 @@
 ## MVC
-Week 7 Inversion of Control and MVC Pattern
-Describe the architecture of the MVC pattern
-What are inner classes? What kinds are there?
+The `MVC (Model-View-Controller)` pattern is a software architectural design for implementing user interfaces.<br>
 
+It divides an application into three interconnected components.<br>
 
-The MVC (Model-View-Controller) pattern is a software architectural design for implementing user interfaces. It divides an application into three interconnected components. This separation helps manage complexity, particularly in web applications, by enabling efficient code reuse and parallel development. Here's an overview of each component:
+This separation helps manage complexity, particularly in web applications, by enabling efficient code reuse and parallel development.
 
 1. **Model**: 
-   - The Model represents the data and the business logic of the application. It's responsible for retrieving data from the database, manipulating it, and updating it. The Model is independent of the user interface and doesn't concern itself with how data is displayed or interacted with.
-   - In essence, it encapsulates the core functionality and data of the application.
+   - It represents the core functionality and data of the application. 
+   - It's responsible for retrieving data from the database, manipulating it, and updating it.
+   - The Model is independent of the user interface and doesn't concern itself with how data is displayed or interacted with.
 
 2. **View**: 
-   - The View is responsible for presenting data to the user. It renders the Model into a form that is suitable for interaction, typically a user interface element such as HTML/CSS in web applications.
+   - The View is responsible for presenting data to the user.
+   - It renders the Model into a form that is suitable for interaction, typically a user interface element such as HTML/CSS in web applications.
    - Views are often designed as templates, which are filled in with data from the Model and then rendered to the user.
    - The View also sends user commands to the Controller to act upon.
 
@@ -25,10 +26,10 @@ In the MVC pattern, these three components work together seamlessly:
 - The Controller manipulates the Model as necessary and selects an appropriate View.
 - The View gets the data it needs from the Model to display to the user.
 
-This pattern promotes a clean separation of concerns, making an application easier to maintain and extend. The Model's independence from View and Controller makes it possible to change the application's interface without altering the underlying business logic, and vice versa. This modular approach also facilitates more straightforward testing and development within teams.
+## IoC
+`Inversion of Control (IoC)` is a principle by which the control of objects or portions of a program is transferred to a container or framework.
 
-
-Inversion of Control (IoC) is a fundamental concept in software engineering, extensively used in Java and other programming languages. It's a principle by which the control of objects or portions of a program is transferred to a container or framework. In simpler terms, IoC is about moving the control of creating and managing objects from your application code to a framework or container.
+ In simpler terms, IoC is about moving the control of creating and managing objects from your application code to a framework or container.
 
 In traditional programming, your code typically controls the flow of an application and makes decisions about what and when to execute. In the case of IoC, this control is inverted: a framework or container makes these decisions for you.
 

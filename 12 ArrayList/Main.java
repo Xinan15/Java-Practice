@@ -32,6 +32,9 @@ class Main {
         cars.remove(0);
         System.out.println(cars);
 
+        cars.size();
+        System.out.println(cars.size());
+
         // To remove all the elements in the ArrayList, use the clear() method:
         cars.clear();
         System.out.println(cars);
