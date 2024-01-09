@@ -20,4 +20,4 @@
 
 ### Dev Notes
 [1. Git Commands](./Notes-Dev/1.%20Git-Commands.md)<br>
-[2. DOS Commands](./Notes-Dev/1.%20Git-Commands.md)<br>
+[2. DOS Commands](./Notes-Dev/2.%20DOS%20Commands.md)<br>
